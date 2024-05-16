@@ -1,0 +1,53 @@
+---
+title: "PREDICCIONES DE REPORTE"
+author: "Jheron Hames Carrion Pariguana"
+date: "2024-05-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Paso 1: Importar los datos del archivo CSV
+
+
+```{r}
+report <- read.csv("report.csv")
+```
+
+## Paso 2 Mostrar las primeras filas para entender la estructura de los datos
+
+
+```{r}
+str(report)
+
+summary(report)
+```
+
+## Paso 3 Resumen estadístico de las variables numéricas
+
+
+```{r}
+summary(report$TOTAL)
+
+report <- report[complete.cases(report), ]
+
+head(report)
+```
+
+## Paso 4  Visualización y análisis exploratorio
+
+
+```{r}
+
+```
+
+## Paso 5 Filtrar datos y realizar consultas específicas
+
+
+```{r}
+
+```
+
+
